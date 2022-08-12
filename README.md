@@ -8,6 +8,7 @@ This code was developed using:
   - IMPORTANT: in order to install the correct version of GLUT, download the PyOpenGL binaries from https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyopengl
   - download both PyOpenGL and PyOpenGL_accelerate (make sure you get the correct binaries based on your Python version, you can watch this video for a walkthrough https://www.youtube.com/watch?v=a4NVQC_2S2U)
   - install the .whl files with 'pip install <filename.whl>'
+  - if you get errors at glutInit(), this could be because you don't have compatible version of PyOpenGL and GLUT
 
 # Run the demo
 The demo can be run with 'python window.py'. See 'window.py for commented instructions on how to interact with the demo.
