@@ -76,7 +76,7 @@ def initLighting():
     glLightfv(GL_LIGHT1, GL_AMBIENT, LightAmbient)
     glLightfv(GL_LIGHT1, GL_DIFFUSE, LightDiffuse)
     glLightfv(GL_LIGHT1, GL_SPECULAR, LightSpecular)
-    glLightf(GL_LIGHT1, GL_CONSTANT_ATTENUATION, 0.5)
+    glLightf(GL_LIGHT1, GL_CONSTANT_ATTENUATION, 1)
 
     glLightfv(GL_LIGHT1, GL_POSITION, LightPosition)
     glEnable(GL_LIGHT1)

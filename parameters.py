@@ -36,6 +36,5 @@ LightAmbient = [0.15, 0.0, 0.0, 1.0]
 LightDiffuse = [0.2, 0.0, 0.0, 1.0]
 LightSpecular = [0.3, 0.0, 0.0, 0.0]
 LightPosition = [20.0, 150.0, 0.0, 1.0]
-LightPosition = [0.0, 0.0, 0.0, 1.0]
 specularMaterial = [0.25, 0.0, 0.0, 1.0]
 shininessMaterial = 16.0

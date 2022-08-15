@@ -50,7 +50,7 @@ class TexturedSinewave():
             derivative_sine = math.cos(v[1] * self.period + self.offset) * self.depth/2 * self.period
             nx = 0
             ny = -derivative_sine / math.sqrt(pow(derivative_sine,2) + 1)
-            nz = 1 / math.sqrt(pow(derivative_sine,2) + 1)
+            nz = -1 / math.sqrt(pow(derivative_sine,2) + 1)
             norm = np.array([nx, ny, nz])
             norm = norm/np.linalg.norm(norm)
             normals.append(norm)
@@ -115,6 +115,11 @@ class TexturedSinewave():
         self.colors = self.generateVertexColors(self.vertices, self.sphere_centers)
 
     def drawTexturedSinewave(self, viewMat, focal_distance):
+        specularMaterial = [0.25, 0.0, 0.0, 1.0]
+        shininessMaterial = 16.0
+        glMaterialfv(GL_FRONT, GL_SPECULAR, specularMaterial)
+        glMaterialf(GL_FRONT, GL_SHININESS, shininessMaterial)
+
         glBegin(GL_TRIANGLES)
         for i in self.indices:
             glColor3fv(self.colors[i])
